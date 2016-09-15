@@ -13,7 +13,7 @@ export class AppComponent {
 
     constructor(private appStore: AppStore) {
         console.log(jQuery('body'));
-        // console.log(_.random(10,20));
-        alert(this.appStore);
+        console.log(_.random(10,20));
+        //alert(this.appStore);
     }
 }

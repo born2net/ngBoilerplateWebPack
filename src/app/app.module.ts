@@ -7,20 +7,20 @@ import { AppComponent } from './app.component';
 import {Ng2BootstrapModule} from "ng2-bootstrap";
 
 import {AppStore} from "angular2-redux-util";
-
+import {Lib} from "../Lib";
+import notify from "../appdb/NotifyReducer";
 
 var providing = [{
-  provide: AppStore
-  // ,
-  // useFactory: Lib.StoreFactory({
-  //     notify,
-  //     appdb,
-  //     business,
-  //     stations,
-  //     reseller,
-  //     adnet,
-  //     orders
-  // })
+  provide: AppStore,
+  useFactory: Lib.StoreFactory({
+      notify
+      // appdb,
+      // business,
+      // stations,
+      // reseller,
+      // adnet,
+      // orders
+  })
 }];
 
 @NgModule({
