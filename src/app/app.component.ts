@@ -9,7 +9,7 @@ import {AppStore} from "angular2-redux-util";
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'app works!';
+    title = 'app works 2!';
 
     constructor(private appStore: AppStore) {
         console.log(jQuery('body'));
