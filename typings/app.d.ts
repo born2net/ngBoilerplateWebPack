@@ -5,6 +5,18 @@
  */
 
 
+/** used **/
+///<reference path="../typings/browser/ambient/redux-thunk/redux-thunk.d.ts" />
+///<reference path="../typings/browser/ambient/redux/redux.d.ts" />
+///<reference path="../typings/browser/ambient/reselect/reselect.d.ts" />
+
+/** not used **/
+//<reference path="../typings/browser/ambient/require/require.d.ts" />
+//<reference path="../typings/jquery/jquery.d.ts" />
+//<reference path='../node_modules/angular2/typings/browser.d.ts'/>
+//<reference path="../typings/browser/ambient/systemjs/systemjs.d.ts" />
+//<reference path="../typings/browser/ambient/es6-shim/es6-shim.d.ts" />
+//<reference path="../typings/bootbox/bootbox.d.ts" />
 // <reference path="../typings/hammerjs/hammerjs.d.ts"/>
 // <reference path="../typings/jasmine/jasmine.d.ts"/>
 // <reference path="../typings/angular-protractor/angular-protractor.d.ts"/>
@@ -13,7 +25,7 @@
 // <reference path="../typings/zone.js/zone.js.d.ts"/>
 
 
-///<reference path="../typings/browser/ambient/redux-thunk/redux-thunk.d.ts" />
+
 
 declare var assert:any;
 // declare var module:any;
