@@ -25,14 +25,12 @@ import * as platform from "platform";
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'app works 3';
+    title = 'app works...!';
     constructor(private appStore: AppStore) {
-
-        alert(platform.name.toLowerCase());
-
-        // console.log(jQuery('body'));
-        // console.log(_.random(10,20));
-        // alert(this.appStore);
+        console.log(platform.name.toLowerCase())
+        console.log(jQuery('body').height());
+        console.log(_.random(10,20));
+        console.log(this.appStore);
     }
 
 
