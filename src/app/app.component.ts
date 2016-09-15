@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import * as _ from 'lodash';
+import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AppStore} from "angular2-redux-util";
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/debounceTime";
@@ -14,6 +16,7 @@ import "rxjs/add/operator/retry";
 import "rxjs/add/operator/mergeMap";
 import "rxjs/add/operator/merge";
 import "rxjs/add/operator/do";
+import * as platform from "platform";
 
 
 @Component({
@@ -24,6 +27,8 @@ import "rxjs/add/operator/do";
 export class AppComponent {
     title = 'app works 3';
     constructor(private appStore: AppStore) {
+
+        alert(platform.name.toLowerCase());
 
         // console.log(jQuery('body'));
         // console.log(_.random(10,20));
