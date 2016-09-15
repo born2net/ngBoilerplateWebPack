@@ -4,6 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {Ng2BootstrapModule} from "ng2-bootstrap";
+
+import {AppStore} from "angular2-redux-util";
+
+
+var providing = [{
+  provide: AppStore
+  // ,
+  // useFactory: Lib.StoreFactory({
+  //     notify,
+  //     appdb,
+  //     business,
+  //     stations,
+  //     reseller,
+  //     adnet,
+  //     orders
+  // })
+}];
 
 @NgModule({
   declarations: [
@@ -12,9 +30,11 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    Ng2BootstrapModule
   ],
-  providers: [],
+  providers: [providing],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -31,3 +31,19 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+
+.idea/
+.git/
+dist/
+docs/
+node_modules/
+temp/
+src/**/*.map
+src/**/*.js
+src/*.js
+src/*.map
+/src/*.js
+/src/*.map
+
+
