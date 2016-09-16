@@ -42,6 +42,12 @@ export class AppComponent {
         {stateOff: 'glyphicon-off'}
     ];
 
+
+    private onClick(event){
+        console.log(event);
+        console.log(this.appStore);
+    }
+
     public hoveringOver(value:number):void {
         this.overStar = value;
         this.percent = 100 * (value / this.max);
