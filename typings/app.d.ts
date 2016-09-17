@@ -49,7 +49,6 @@ declare module Reflect {
     function setPrototypeOf(target: any, proto: any): boolean;
 }
 
-
 interface Window {
     devToolsExtension: any;
     devToolsExtensionDisabled: any;
@@ -93,7 +92,6 @@ declare var watch:any;
 
 declare var __moduleName: string;
 
-// in TS1.8 we can use this:
 //declare global {
 //    devToolsExtension: any;
 //    devToolsExtensionDisabled: any;

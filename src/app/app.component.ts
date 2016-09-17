@@ -1,3 +1,13 @@
+/**
+ * Sean Levy readme:
+ * this is an ongoing project which uses ng-cli@webpack
+ * to continue and test it while ng-cli is in beta
+ * and eventually will migrate this project with studioDashboard
+ *
+ * updated: 9-17-2016
+ *
+ **/
+
 import {Component} from '@angular/core';
 import * as _ from 'lodash';
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
@@ -31,6 +41,7 @@ export class AppComponent {
         console.log(jQuery('body').height());
         console.log(_.random(10,20));
         console.log(this.appStore);
+        alert(8);
     }
 
 

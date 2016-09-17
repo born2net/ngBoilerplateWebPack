@@ -20,8 +20,6 @@ class PrivelegesModel {
 ////import {BusinessUser} from "./business/BusinessUser";
 ////import * as thunkMiddleware from 'redux-thunk';
 
-
-
 @Injectable()
 export class Lib {
 
